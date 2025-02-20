@@ -25,8 +25,8 @@ REST API service for processing numerical data.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
+git clone https://github.com/vov4ik08/even_numbers.git
+cd even_numbers
 ```
 
 ### 2. Run Project

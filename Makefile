@@ -1,7 +1,11 @@
 # Starts the project and runs composer install
 up:
-	docker compose up --build -d
+	docker compose up --build -d app
 	docker compose exec app composer install
+	docker compose exec app chown -R www-data:www-data /var/www/html/runtime
+	docker compose exec app chown -R www-data:www-data /var/www/html/web/assets
+	docker compose exec app chmod -R 755 /var/www/html/runtime
+	docker compose exec app chmod -R 755 /var/www/html/web/assets
 
 # Stops the project
 down:
